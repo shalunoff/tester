@@ -1,0 +1,17 @@
+- title "Recipes"
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th
+        Recipes
+  %tbody
+    - for recipe in @recipes
+      %tr
+        %td
+          = recipe.name
+
+
+
+
+= link_to "New Recipe", new_recipe_path,:class=>'btn'
